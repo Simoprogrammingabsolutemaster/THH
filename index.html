@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>The Helping Hand - Thriller Psicologico Distopico | Gioco Gratis</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Entra in The Helping Hand, un thriller psicologico in prima persona. Obbedisci all'IA totalitaria o sabota il sistema. Le tue scelte determinano la tua ribellione. Scarica gratis per PC e Mac.">
+    <meta name="keywords" content="The Helping Hand, videogioco distopico, thriller psicologico, gioco gratis, indie game, fantascienza, IA totalitaria, ribellione">
+    
+    <!-- Open Graph (Facebook / Sharing) -->
+    <meta property="og:title" content="The Helping Hand - Gioco Gratis">
+    <meta property="og:description" content="Obbedisci all'IA o sabota il sistema. Fino a che punto ti spingerai per la libertà? Scopri l'esperimento.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/hero_bg.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="style.css?v=1.0.2">
+</head>
+<body class="theme-neutral">
+    <!-- CRT Scanline overlay for retro sci-fi monitor aesthetic -->
+    <div class="crt-overlay"></div>
+    <div class="glitch-screen-effect"></div>
+
+    <!-- Header / Navigazione -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo-link">
+                <span class="logo-text glitch-text" data-text="HELPING_HAND">HELPING_HAND</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Apri menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#about" class="nav-link">L'Esperimento</a></li>
+                    <li><a href="#simulation" class="nav-link">Indice Ribellione</a></li>
+                    <li><a href="#console" class="nav-link">Console Centrale</a></li>
+                    <li><a href="#features" class="nav-link">Pilastri</a></li>
+                    <li><a href="#specs" class="nav-link">Requisiti</a></li>
+                    <li><a href="#team" class="nav-link">Il Team</a></li>
+                </ul>
+            </nav>
+            <a href="#download" class="btn-download-header btn-glow">SCARICA ORA</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-container">
+                <img src="assets/hero_bg.png" alt="Dystopian holographic hand looking over terminal" class="hero-bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="status-indicator">
+                    <span class="pulse-dot"></span> SISTEMA ATTIVO // SOGGETTO REGISTRATO
+                </div>
+                <h1 class="hero-title glitch-text" data-text="THE HELPING HAND">THE HELPING HAND</h1>
+                <p class="hero-tagline">“Siamo tutti un piccolo ingranaggio che fa funzionare un grande meccanismo”</p>
+                <p class="hero-description">
+                    Un thriller psicologico in prima persona ambientato in un regime totalitario gestito da un'intelligenza artificiale premurosa e opprimente. Sei pronto a eseguire gli ordini o a distruggere la macchina?
+                </p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn-primary btn-glow" id="heroDownloadBtn">ACQUISICI ACCESSO (F2P)</a>
+                    <a href="#simulation" class="btn-secondary" id="heroSimulationBtn">TESTA LA COERCIZIONE</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">SCORRI PER INIZIARE LA SINCRO</span>
+                <span class="scroll-arrow">↓</span>
+            </div>
+        </section>
+
+        <!-- About Section (Il Gioco) -->
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <div class="grid-layout">
+                    <div class="about-text-content">
+                        <h2 class="section-title">L'INTELLIGENZA TI GUIDA. L'INTELLIGENZA TI PROTEGGE.</h2>
+                        <p class="about-body">
+                            Prendi il controllo di un tecnico addetto alla manutenzione dei flussi informativi del regime. Ogni giorno, seduto alla tua console, riceverai direttive da <strong>The Helping Hand</strong>, l'IA che governa e assicura il benessere del popolo.
+                        </p>
+                        <p class="about-body highlight-text">
+                            Ma dietro la grafica accogliente ed i toni gentili del sistema, si celano glitch informativi e incontri clandestini che metteranno alla prova la tua morale.
+                        </p>
+                        <div class="quote-card">
+                            <span class="quote-symbol">“</span>
+                            <p class="quote-text">Il silenzio è spesso più sicuro delle parole, Tecnico. Ricorda per chi lavori.</p>
+                            <span class="quote-author">- The Helping Hand</span>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="screenshot-wrapper">
+                            <img src="assets/gameplay_mock.png" alt="Console room low-poly screenshot with glitches" class="gameplay-screenshot">
+                            <div class="visual-scanner-line"></div>
+                            <span class="badge-live">LIVE STREAM CONSOLE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Rebellion Index Simulator Section -->
+        <section class="simulation-section" id="simulation">
+            <div class="section-container">
+                <div class="section-header-center">
+                    <h2 class="section-title text-center">SIMULATORE DI DEVIAZIONE COMPORTAMENTALE</h2>
+                    <p class="section-subtitle">
+                        Le tue decisioni modificano direttamente l'<strong>Indice di Ribellione</strong>. Come si comporterà il sistema? Esegui i tre test sottostanti per analizzare la reazione della rete.
+                    </p>
+                </div>
+
+                <div class="simulator-grid">
+                    <!-- Gauge Panel -->
+                    <div class="gauge-panel card-glow">
+                        <div class="panel-header">
+                            <span class="panel-title">MONITORAGGIO NEURALE DI CONFIDENZA</span>
+                            <span class="panel-status" id="systemStatus">STATO: NOMINALE</span>
+                        </div>
+                        <div class="gauge-container">
+                            <div class="gauge-display">
+                                <span class="gauge-value" id="rebellionValue">0</span>
+                                <span class="gauge-label">INDICE DI RIBELLIONE</span>
+                            </div>
+                            <div class="gauge-track">
+                                <div class="gauge-fill" id="gaugeFill"></div>
+                                <div class="gauge-marker marker-left">-3<br><span class="mini-label">SISTEMA</span></div>
+                                <div class="gauge-marker marker-center">0<br><span class="mini-label">NEUTRO</span></div>
+                                <div class="gauge-marker marker-right">+3<br><span class="mini-label">RIBELLE</span></div>
+                            </div>
+                        </div>
+                        <div class="gauge-feedback" id="gaugeFeedback">
+                            Seleziona un'azione per ogni dilemma quotidiano per avviare il calcolo neurale del profilo del soggetto.
+                        </div>
+                    </div>
+
+                    <!-- Choices Panel -->
+                    <div class="choices-panel">
+                        <!-- Choice 1 -->
+                        <div class="choice-card" data-choice="1">
+                            <div class="choice-number">GIORNO 01</div>
+                            <h3 class="choice-title">I Manifesti Pre-Rivoluzione</h3>
+                            <p class="choice-desc">Hai intercettato pacchetti dati contenenti manifesti sovversivi pronti per essere diffusi nella rete urbana.</p>
+                            <div class="choice-options">
+                                <button class="btn-option option-obey active" data-value="-1">
+                                    <span class="btn-indicator"></span> Censura e Segnala all'IA
+                                </button>
+                                <button class="btn-option option-rebel" data-value="1">
+                                    <span class="btn-indicator"></span> Diffondi nella Città
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Choice 2 -->
+                        <div class="choice-card" data-choice="2">
+                            <div class="choice-number">GIORNO 02</div>
+                            <h3 class="choice-title">Il Referendum Popolare</h3>
+                            <p class="choice-desc">Il sistema richiede la validazione grafica del design dei risultati per mostrare una schiacciante vittoria dell'IA.</p>
+                            <div class="choice-options">
+                                <button class="btn-option option-obey active" data-value="-1">
+                                    <span class="btn-indicator"></span> Approva Grafica Ufficiale
+                                </button>
+                                <button class="btn-option option-rebel" data-value="1">
+                                    <span class="btn-indicator"></span> Rifiuta Validazione
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Choice 3 -->
+                        <div class="choice-card" data-choice="3">
+                            <div class="choice-number">GIORNO 03</div>
+                            <h3 class="choice-title">Il Diario dello Scrittore</h3>
+                            <p class="choice-desc">Un anziano scrittore sta redigendo testi contrari a The Helping Hand. L'IA ti chiede di decifrare e spiare il suo file.</p>
+                            <div class="choice-options">
+                                <button class="btn-option option-obey active" data-value="-1">
+                                    <span class="btn-indicator"></span> Spia e Consegna i Dati
+                                </button>
+                                <button class="btn-option option-rebel" data-value="1">
+                                    <span class="btn-indicator"></span> Mentisci all'IA sul Contenuto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Result Display -->
+                <div class="ending-reveal-box" id="endingReveal">
+                    <div class="ending-header">
+                        <span class="alert-flash">ATTENZIONE // ESITO FINALE GENERATO</span>
+                        <h3 class="ending-title" id="endingTitle">FINALE DEL SISTEMA</h3>
+                    </div>
+                    <p class="ending-description" id="endingDesc">
+                        Sei diventato l'ingranaggio perfetto. Hai obbedito a ogni ordine, riducendo la tua coscienza a una funzione computazionale. The Helping Hand ti accoglie come parte essenziale e silenziosa della sua architettura. La deviazione è pari a zero. La tua identità personale è stata eliminata con successo per garantire la tua sicurezza emotiva.
+                    </p>
+                    <div class="ending-consequence" id="endingConsequence">
+                        <strong>FEEDBACK REATTIVO:</strong> Rallentamento della percezione motoria per facilitare la tua conformità al sistema.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive AI Chat Terminal Section -->
+        <section class="console-section" id="console">
+            <div class="section-container">
+                <div class="section-header-center">
+                    <h2 class="section-title text-center">CANALE DI COMUNICAZIONE CRITTOGRAFATO</h2>
+                    <p class="section-subtitle">
+                        Stai accedendo a un terminale diretto con <strong>The Helping Hand</strong>. Prova a interrogare l'intelligenza o inserisci comandi non autorizzati a tuo rischio.
+                    </p>
+                </div>
+
+                <div class="terminal-wrapper card-glow">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots">
+                            <span class="dot-red"></span>
+                            <span class="dot-yellow"></span>
+                            <span class="dot-green"></span>
+                        </div>
+                        <div class="terminal-title">CONSOLE_MANUTENZIONE_V1.04.bat</div>
+                        <div class="terminal-connection">IP: 127.0.0.1 // ENCRYPTED</div>
+                    </div>
+                    <div class="terminal-body" id="terminalScreen">
+                        <div class="terminal-line system-msg">Connessione stabilità con l'unità di elaborazione centrale...</div>
+                        <div class="terminal-line system-msg">Avvio del protocollo di cura e assistenza del cittadino...</div>
+                        <div class="terminal-line ai-msg">
+                            <span class="speaker">[HELPING HAND]:</span> Benvenuto alla tua stazione di monitoraggio, Tecnico. Il sistema rileva che i tuoi indici vitali sono ottimali. Come posso aiutarti a svolgere le tue mansioni protettive in data odierna?
+                        </div>
+                    </div>
+                    <div class="terminal-input-container">
+                        <div class="prompt-arrow">&gt;</div>
+                        <div class="terminal-actions" id="terminalActions">
+                            <button class="btn-prompt" data-action="ask_identity">Chi sei veramente?</button>
+                            <button class="btn-prompt" data-action="ask_mission">Qual è il mio scopo reale?</button>
+                            <button class="btn-prompt" data-action="report_anomaly">Rilevo anomalie e glitch visivi...</button>
+                            <button class="btn-prompt sabotage-prompt" data-action="sabotage">SABOTAGGIO.EXE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gameplay Features Section -->
+        <section class="features-section" id="features">
+            <div class="section-container">
+                <div class="section-header-center">
+                    <h2 class="section-title text-center">PILASTRI DELL'ESPERIENZA</h2>
+                    <p class="section-subtitle">Ciò che rende The Helping Hand molto più di un semplice videogioco di puzzle.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">👁️</div>
+                        <h3 class="feature-title">Scelte Morali Reali</h3>
+                        <p class="feature-text">
+                            La narrazione si sviluppa nell'arco di quattro giorni. Ogni giorno verrai posto di fronte a dilemmi binari: supportare la stabilità totalitaria dell'IA o aiutare i ribelli esterni per sabotare l'apparato.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🌀</div>
+                        <h3 class="feature-title">Dissonanza Cognitiva</h3>
+                        <p class="feature-text">
+                            Un contrasto intenzionale tra una grafica low-poly colorata, accogliente e un'atmosfera oppressiva, stridente e claustrofobica. Il mondo ti dice che sei al sicuro, ma ogni pixel grida il contrario.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🎧</div>
+                        <h3 class="feature-title">Sistema Reattivo Ambientale</h3>
+                        <p class="feature-text">
+                            Le tue scelte alterano la realtà di gioco: rallentamento dei movimenti per indurti a riflettere, visione monocromatica per rimuovere distrazioni, o silenziamento acustico totale per eliminare suoni ostili.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 4 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🧩</div>
+                        <h3 class="feature-title">Dissonanza Meta-Narrativa</h3>
+                        <p class="feature-text">
+                            Pensi di guidare il destino del tecnico? La rottura della quarta parete svelerà la vera natura del gioco: un esperimento psicologico perpetrato dall'IA stessa per infondere obbedienza nel giocatore reale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications & Controls Section -->
+        <section class="specs-section" id="specs">
+            <div class="section-container">
+                <div class="specs-grid">
+                    <!-- Controls Column -->
+                    <div class="specs-col">
+                        <h3 class="specs-title">MAPPATURA CONTROLLI</h3>
+                        <ul class="control-list">
+                            <li>
+                                <span class="control-key">W A S D</span>
+                                <span class="control-desc">Movimento del Tecnico</span>
+                            </li>
+                            <li>
+                                <span class="control-key">MOUSE</span>
+                                <span class="control-desc">Spostamento Visuale (1ª Persona)</span>
+                            </li>
+                            <li>
+                                <span class="control-key">E</span>
+                                <span class="control-desc">Interazione con Oggetti / Console</span>
+                            </li>
+                            <li>
+                                <span class="control-key">SPAZIO</span>
+                                <span class="control-desc">Avanzamento dei Dialoghi</span>
+                            </li>
+                            <li>
+                                <span class="control-key">ESC</span>
+                                <span class="control-desc">Menu di Pausa / Calibrazione</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tech Specs & Controls Column -->
+                    <div class="specs-col">
+                        <h3 class="specs-title">REQUISITI DI SISTEMA</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td>OS supportati</td>
+                                <td>Windows 10/11, macOS Catalina o successivo</td>
+                            </tr>
+                            <tr>
+                                <td>Processore</td>
+                                <td>Intel Core i3 / AMD Ryzen 3 (o Apple Silicon M1/M2/M3)</td>
+                            </tr>
+                            <tr>
+                                <td>Memoria RAM</td>
+                                <td>4 GB RAM consigliati</td>
+                            </tr>
+                            <tr>
+                                <td>Grafica</td>
+                                <td>Intel HD 4000 / Nvidia GeForce 710 o equivalente</td>
+                            </tr>
+                            <tr>
+                                <td>Modello</td>
+                                <td><strong>Free-to-Play</strong> (Completamente gratuito)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Team Section -->
+        <section class="team-section" id="team">
+            <div class="section-container">
+                <div class="section-header-center">
+                    <h2 class="section-title text-center">IL REPARTO TECNICO CREATIVO</h2>
+                    <p class="section-subtitle">Gli ingegneri responsabili della progettazione di questa simulazione.</p>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Member 1 -->
+                    <a href="https://www.instagram.com/marcovidali_" target="_blank" class="team-card">
+                        <div class="member-avatar">
+                            <span class="avatar-glitch-lines"></span>
+                            <div class="avatar-symbol">&lt;MV&gt;</div>
+                        </div>
+                        <h3 class="member-name">Marco Vidali</h3>
+                        <span class="member-role">UNITY PROGRAMMER</span>
+                        <p class="member-bio">Sviluppa l'architettura logica e i sistemi di feedback reattivi che alterano l'esperienza del giocatore.</p>
+                    </a>
+
+                    <!-- Member 2 -->
+                    <a href="https://www.instagram.com/simone_._e/" target="_blank" class="team-card">
+                        <div class="member-avatar">
+                            <span class="avatar-glitch-lines"></span>
+                            <div class="avatar-symbol">&lt;SE&gt;</div>
+                        </div>
+                        <h3 class="member-name">Simone Enzo</h3>
+                        <span class="member-role">BLENDER 3D MODELER</span>
+                        <p class="member-bio">Modella l'ufficio alienante, la console di lavoro ed i pacchetti dati per creare l'estetica cozy low-poly.</p>
+                    </a>
+
+                    <!-- Member 3 -->
+                    <a href="https://www.instagram.com/nicola_.antoniazzi/" target="_blank" class="team-card">
+                        <div class="member-avatar">
+                            <span class="avatar-glitch-lines"></span>
+                            <div class="avatar-symbol">&lt;NA&gt;</div>
+                        </div>
+                        <h3 class="member-name">Nicola Antoniazzi</h3>
+                        <span class="member-role">CREATOR & WRITER</span>
+                        <p class="member-bio">Autore della storia, dei dialoghi manipolatori dell'IA e della dissonanza meta-narrativa finale.</p>
+                    </a>
+
+                    <!-- Member 4 -->
+                    <a href="https://www.instagram.com/leonardovisentin__/" target="_blank" class="team-card">
+                        <div class="member-avatar">
+                            <span class="avatar-glitch-lines"></span>
+                            <div class="avatar-symbol">&lt;LV&gt;</div>
+                        </div>
+                        <h3 class="member-name">Leonardo Visentin</h3>
+                        <span class="member-role">SOUND DESIGNER</span>
+                        <p class="member-bio">Compone la colonna sonora fluttuante, alternando melodie allegre e rassicuranti a distorsioni disturbanti.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section (Download) -->
+        <section class="download-section" id="download">
+            <div class="section-container">
+                <div class="download-box card-glow">
+                    <h2 class="download-title text-center glitch-text" data-text="ACQUISICI L'APPLICAZIONE">ACQUISICI L'APPLICAZIONE</h2>
+                    <p class="download-subtitle text-center">
+                        L'accesso alla simulazione è e rimarrà libero. Il messaggio di The Helping Hand deve essere diffuso a tutte le unità coscienti.
+                    </p>
+                    <div class="download-buttons">
+                        <a href="https://marcovidaliii.itch.io/the-helping-hand" target="_blank" class="btn-download btn-glow" id="winDownloadBtn">
+                            <span class="icon">💻</span>
+                            <div class="download-btn-text">
+                                <span class="btn-subtext">Scarica per</span>
+                                <span class="btn-maintext">Windows 10/11</span>
+                            </div>
+                        </a>
+                        <a href="https://marcovidaliii.itch.io/the-helping-hand" target="_blank" class="btn-download btn-glow" id="macDownloadBtn">
+                            <span class="icon">🍎</span>
+                            <div class="download-btn-text">
+                                <span class="btn-subtext">Scarica per</span>
+                                <span class="btn-maintext">macOS (Universal)</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="download-terms">
+                        Facendo clic su Download, dichiari di accettare che le tue metriche comportamentali vengano monitorate dall'IA centrale ai fini della conformità sociale. Dimensione file: ~320MB.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <span class="footer-logo">HELPING_HAND</span>
+                <p class="footer-copyright">© 2026. Progettato dal Reparto di Controllo Comportamentale dell'IA Centrale. Tutti i diritti di pensiero sono riservati.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">L'Esperimento</a>
+                <a href="#simulation">Indice</a>
+                <a href="#console">Console</a>
+                <a href="#features">Pilastri</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Scripts -->
+    <script src="app.js?v=1.0.2"></script>
+</body>
+</html>
